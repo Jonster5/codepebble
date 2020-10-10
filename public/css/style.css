@@ -40,6 +40,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -10;
 }
 
 .nav {
@@ -65,7 +66,7 @@ body {
 }
 
 .nav_item:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
 
@@ -74,7 +75,31 @@ body {
 }
 
 .nav_logo_img {
-    background: url('../images/CH_Logo.png');
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+    user-select: none;
+}
+
+.nav_logo_img:hover {
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav_logo_text {
+    font-family: "Ubuntu-Heavy";
+    color: #6337e6;
+    font-size: 30px;
+    padding: 5px 10px;
+    user-select: none;
+}
+
+.nav_logo_text strong {
+    color: red;
+}
+
+.nav_logo_text:hover {
+    cursor: pointer;
 }
 
 .nav_spacer {

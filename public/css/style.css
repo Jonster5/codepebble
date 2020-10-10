@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url('../fonts/Ubuntu/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Ubuntu-Heavy";
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.background {
+    background: url('../images/CH_BG.png');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    max-height: 75px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_item {
+    color: white;
+    font-size: 24px;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: "Ubuntu-Medium";
+    transition-duration: 0.1s;
+    user-select: none;
+}
+
+.nav_item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.nav_item:active {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.nav_logo_img {
+    background: url('../images/CH_Logo.png');
+}
+
+.nav_spacer {
+    flex-grow: 2;
+}

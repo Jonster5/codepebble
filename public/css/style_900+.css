@@ -142,20 +142,29 @@ body {
     flex-grow: 1;
     transition-duration: 0.2s;
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column;
     justify-content: center;
     height: 400px;
+    box-sizing: border-box;
 }
 
 .article:hover {
     flex-grow: 16;
 }
 
+.article:hover .article_title_display {
+    display: none;
+}
+
 .article_title {
     width: 60%;
-    font-size: 200%;
-    margin-top: 25px;
+    font-size: 35px;
+    margin: 25px auto;
     text-align: center;
+}
+
+.article_title_display {
+    margin: 25px auto;
 }
 
 #article_one {

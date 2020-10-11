@@ -135,15 +135,16 @@ body {
     width: 100%;
     display: flex;
     background: white;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .article {
     flex-grow: 1;
     transition-duration: 0.2s;
     display: flex;
-    flex-flow: row;
+    flex-flow: wrap;
     justify-content: center;
+    height: 400px;
 }
 
 .article:hover {

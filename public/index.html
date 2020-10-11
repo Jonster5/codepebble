@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,7 +16,8 @@
 
     <title>Document</title>
 
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/style_900+.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/style_-900.css" />
 
 </head>
 
@@ -24,7 +26,7 @@
 
     <div class="background">
         <div class="nav">
-            <img src="images/CH_Logo.png" class="nav_logo_img" />
+            <img src="images/CH_Logo.svg" class="nav_logo_img" onerror="this.onerror=null; this.src='images/CH_Logo.png'" />
             <div class="nav_logo_text">CODE <strong>PEBBLE</strong></div>
             <div class="nav_spacer"></div>
             <a class="nav_item">Home</a>
@@ -32,12 +34,19 @@
             <a class="nav_item">Games</a>
         </div>
     </div>
-    <div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br /> hello
+    <div class="articles">
+        <div class="article" id="article_one">
+            <div class="article_title">Pebble 2D</div>
+            <div class="article_content"></div>
+        </div>
+        <div class="article" id="article_two">
+            <div class="article_title">Endless Sky:<br /> Factions At War</div>
+            <div class="article_content"></div>
+        </div>
+        <div class="article" id="article_three">
+            <div class="article_title">OG Games</div>
+            <div class="article_content"></div>
+        </div>
     </div>
 </body>
 

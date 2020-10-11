@@ -8,6 +8,21 @@
     src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
 }
 
+@font-face {
+    font-family: "Righteous";
+    src: url('../fonts/Righteous-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Concert-One";
+    src: url('../fonts/ConcertOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Black-Ops-One";
+    src: url('../fonts/BlackOpsOne-Regular.ttf');
+}
+
 body,
 html {
     height: 100%;
@@ -43,6 +58,9 @@ body {
     z-index: -10;
 }
 
+
+/* navigation */
+
 .nav {
     display: flex;
     position: fixed;
@@ -51,6 +69,7 @@ body {
     z-index: 5;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .nav_item {
@@ -92,10 +111,13 @@ body {
     font-size: 30px;
     padding: 5px 10px;
     user-select: none;
+    text-shadow: 0 0 10px #6337e6;
+    transition-duration: 0.1s;
 }
 
 .nav_logo_text strong {
     color: red;
+    text-shadow: 0 0 10px red;
 }
 
 .nav_logo_text:hover {
@@ -104,4 +126,57 @@ body {
 
 .nav_spacer {
     flex-grow: 2;
+}
+
+
+/* Articles */
+
+.articles {
+    width: 100%;
+    display: flex;
+    background: white;
+    justify-content: space-evenly;
+}
+
+.article {
+    flex-grow: 1;
+    transition-duration: 0.2s;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.article:hover {
+    flex-grow: 16;
+}
+
+.article_title {
+    width: 60%;
+    font-size: 200%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#article_one {
+    background: crimson;
+}
+
+#article_one .article_title {
+    font-family: "Righteous";
+}
+
+#article_two {
+    background: lightblue;
+}
+
+#article_two .article_title {
+    font-family: "Concert-One";
+}
+
+#article_three {
+    background: gold;
+}
+
+#article_three .article_title {
+    font-family: "Black-Ops-One";
 }

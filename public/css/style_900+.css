@@ -112,7 +112,6 @@ body {
     padding: 5px 10px;
     user-select: none;
     text-shadow: 0 0 10px #6337e6;
-    transition-duration: 0.1s;
 }
 
 .nav_logo_text strong {
@@ -160,11 +159,14 @@ body {
     width: 60%;
     font-size: 35px;
     margin: 25px auto;
+    margin-bottom: 0px;
     text-align: center;
 }
 
 .article_title_display {
     margin: 25px auto;
+    width: 100%;
+    height: auto;
 }
 
 #article_one {

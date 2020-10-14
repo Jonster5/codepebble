@@ -143,8 +143,8 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    height: 400px;
     box-sizing: border-box;
+    height: 500px;
 }
 
 .article:hover {
@@ -155,22 +155,28 @@ body {
     display: none;
 }
 
-.article_title {
-    width: 60%;
-    font-size: 35px;
-    margin: 25px auto;
-    margin-bottom: 0px;
-    text-align: center;
+.article:hover .article_title {
+    display: block;
 }
 
 .article_title_display {
-    margin: 25px auto;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 256px;
     height: auto;
 }
 
+.article_title {
+    width: 60%;
+    font-size: 35px;
+    margin: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
 #article_one {
-    background: crimson;
+    background: #9e37ed;
 }
 
 #article_one .article_title {
@@ -178,7 +184,7 @@ body {
 }
 
 #article_two {
-    background: lightblue;
+    background: navy;
 }
 
 #article_two .article_title {
@@ -186,7 +192,7 @@ body {
 }
 
 #article_three {
-    background: gold;
+    background: #0a9fc4;
 }
 
 #article_three .article_title {

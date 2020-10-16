@@ -149,6 +149,7 @@ body {
 
 .article:hover {
     flex-grow: 16;
+    display: block;
 }
 
 .article:hover .article_title_display {
@@ -168,9 +169,7 @@ body {
 .article_title {
     width: 60%;
     font-size: 35px;
-    margin: 15px;
-    margin-bottom: 0px;
-    text-align: center;
+    margin: 25px;
     color: white;
     display: none;
 }

@@ -56,6 +56,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -10;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
 }
 
 
@@ -70,6 +73,7 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
+    flex: 0 0 100%;
 }
 
 .nav_item {
@@ -175,7 +179,7 @@ body {
 }
 
 #article_one {
-    background: #9e37ed;
+    background: #18002b;
 }
 
 #article_one .article_title {

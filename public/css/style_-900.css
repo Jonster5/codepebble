@@ -140,10 +140,6 @@ body {
     height: 100px;
 }
 
-.article:active {
-    flex-grow: 16;
-}
-
 .article_title {
     display: none;
 }
@@ -153,6 +149,7 @@ body {
     width: 30%;
     height: auto;
     margin: 20px;
+    user-select: none;
 }
 
 #article_one {

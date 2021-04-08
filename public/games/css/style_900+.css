@@ -1,26 +1,26 @@
 @font-face {
     font-family: "Ubuntu-Medium";
-    src: url('../fonts/Ubuntu/Ubuntu-Medium.ttf');
+    src: url('/fonts/Ubuntu/Ubuntu-Medium.ttf');
 }
 
 @font-face {
     font-family: "Ubuntu-Heavy";
-    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+    src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf');
 }
 
 @font-face {
     font-family: "Righteous";
-    src: url('../fonts/Righteous-Regular.ttf');
+    src: url('/fonts/Righteous-Regular.ttf');
 }
 
 @font-face {
     font-family: "Concert-One";
-    src: url('../fonts/ConcertOne-Regular.ttf');
+    src: url('/public/fonts/ConcertOne-Regular.ttf');
 }
 
 @font-face {
     font-family: "Black-Ops-One";
-    src: url('../fonts/BlackOpsOne-Regular.ttf');
+    src: url('/fonts/BlackOpsOne-Regular.ttf');
 }
 
 body,
@@ -129,72 +129,17 @@ body {
 }
 
 
-/* Articles */
+/* background */
 
-.articles {
+.background {
     width: 100%;
-    display: flex;
-    background: white;
-    justify-content: space-around;
-}
-
-.article {
-    flex-grow: 1;
-    transition-duration: 0.2s;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 500px;
-}
-
-.article:hover {
-    flex-grow: 16;
-    display: block;
-}
-
-.article:hover .article_title_display {
-    display: none;
-}
-
-.article:hover .article_title {
-    display: block;
-}
-
-.article_title_display {
-    margin: 0 auto;
-    max-width: 256px;
-    height: auto;
-}
-
-.article_title {
-    width: 60%;
-    font-size: 35px;
-    margin: 25px;
-    color: white;
-    display: none;
-}
-
-#article_one {
-    background: #18002b;
-}
-
-#article_one .article_title {
-    font-family: "Righteous";
-}
-
-#article_two {
-    background: navy;
-}
-
-#article_two .article_title {
-    font-family: "Concert-One";
-}
-
-#article_three {
-    background: #0a9fc4;
-}
-
-#article_three .article_title {
-    font-family: "Black-Ops-One";
+    flex-wrap: wrap;
 }

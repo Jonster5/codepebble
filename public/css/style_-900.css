@@ -1,28 +1,3 @@
-@font-face {
-    font-family: "Ubuntu-Medium";
-    src: url('../fonts/Ubuntu/Ubuntu-Medium.ttf');
-}
-
-@font-face {
-    font-family: "Ubuntu-Heavy";
-    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
-}
-
-@font-face {
-    font-family: "Righteous";
-    src: url('../fonts/Righteous-Regular.ttf');
-}
-
-@font-face {
-    font-family: "Concert-One";
-    src: url('../fonts/ConcertOne-Regular.ttf');
-}
-
-@font-face {
-    font-family: "Black-Ops-One";
-    src: url('../fonts/BlackOpsOne-Regular.ttf');
-}
-
 body,
 html {
     height: 100%;

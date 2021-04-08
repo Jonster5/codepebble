@@ -1,26 +1,26 @@
 @font-face {
     font-family: "Ubuntu-Medium";
-    src: url('../fonts/Ubuntu/Ubuntu-Medium.ttf');
+    src: url('/fonts/Ubuntu/Ubuntu-Medium.ttf');
 }
 
 @font-face {
     font-family: "Ubuntu-Heavy";
-    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+    src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf');
 }
 
 @font-face {
     font-family: "Righteous";
-    src: url('../fonts/Righteous-Regular.ttf');
+    src: url('/fonts/Righteous-Regular.ttf');
 }
 
 @font-face {
     font-family: "Concert-One";
-    src: url('../fonts/ConcertOne-Regular.ttf');
+    src: url('/public/fonts/ConcertOne-Regular.ttf');
 }
 
 @font-face {
     font-family: "Black-Ops-One";
-    src: url('../fonts/BlackOpsOne-Regular.ttf');
+    src: url('/fonts/BlackOpsOne-Regular.ttf');
 }
 
 body,
@@ -56,6 +56,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -10;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
 }
 
 
@@ -70,6 +73,7 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
+    flex: 0 0 100%;
 }
 
 .nav_item {
